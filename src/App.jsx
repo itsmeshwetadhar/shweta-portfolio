@@ -830,18 +830,6 @@ export default function App() {
                   </div>
                 </div>
               </div>
-
-              {/* Status Box */}
-              <div className={`p-6 rounded-2xl border text-sm ${
-                darkMode ? 'bg-indigo-950/30 border-indigo-900/50 text-indigo-300' : 'bg-indigo-50 border-indigo-200 text-indigo-800'
-              }`}>
-                <p className="font-semibold mb-1 flex items-center gap-2">
-                  <Sparkles className="w-4 h-4" /> Live Form Integration
-                </p>
-                <p className="text-xs opacity-90">
-                  Submissions are sent live via EmailJS directly to <span className="font-mono">shwetadhar777@gmail.com</span>.
-                </p>
-              </div>
             </div>
 
             {/* Live EmailJS Form */}
