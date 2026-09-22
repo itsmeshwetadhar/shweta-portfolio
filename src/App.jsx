@@ -237,47 +237,53 @@ export default function App() {
 
   const projects = [
     {
-      title: 'Interactive ML Data Analytics Dashboard',
-      category: 'Machine Learning & Web',
-      description: 'Built a feature-rich interactive machine learning visualization and exploratory data analytics application. Integrated customized models with dynamic parameter tuning and interactive data charts.',
-      tags: ['Python', 'React', 'Scikit-Learn', 'Pandas', 'Flask'],
-      github: 'https://github.com/shwetadhar',
-      featured: true
-    },
-    {
-      title: 'AI Computer Vision Gesture Control System',
-      category: 'Computer Vision',
-      description: 'Engineered a real-time computer vision system using OpenCV and Python to track hand keypoints, translating gestures into desktop system controls and interactive applications.',
-      tags: ['Python', 'OpenCV', 'MediaPipe', 'NumPy'],
-      github: 'https://github.com/shwetadhar',
-      featured: true
-    },
-    {
-      title: 'Smart Health Predictive Analytics Model',
+      title: 'MediBuddy',
       category: 'Data Science',
-      description: 'Designed and trained classification algorithms on health datasets to accurately predict disease risks with high precision, featuring thorough data cleaning and feature engineering pipelines.',
-      tags: ['Python', 'Scikit-Learn', 'Matplotlib', 'Jupyter'],
-      github: 'https://github.com/shwetadhar',
-      featured: false
+      description:
+        'A health-focused data science project developed using Python, featuring data analysis and predictive modeling techniques.',
+      tags: ['Python', 'Scikit-Learn', 'Pandas', 'Jupyter'],
+      github: 'https://github.com/itsmeshwetadhar/MediBuddy',
+      featured: true
+    },
+
+    {
+      title: 'Digital Advanced Solution',
+      category: 'Professional Project',
+      description:
+        'Professional web development project developed as part of my Software Developer experience.',
+      tags: ['React.js', 'Node.js', 'Express.js', 'REST APIs'],
+      featured: true
+    },
+
+    {
+      title: 'Lactra',
+      category: 'Professional Project',
+      description:
+        'Professional web development project contributed to during my software development experience.',
+      tags: ['Web Development'],
+      featured: true
     }
   ];
 
   const achievements = [
     {
-      title: 'NASA Space Apps Challenge Participant',
+      title: 'NASA International Space Apps Challenge 2024',
       category: 'Global Hackathon',
-      date: 'NASA Space Apps',
-      description: 'Participated in the prestigious global hackathon, collaborating on innovative space science solutions using NASA open data sources.',
+      date: '2024',
+      description:
+        'Participated in the NASA International Space Apps Challenge 2024 and developed an interactive 3D solar system visualization using Three.js and WebGL.',
       icon: <Sparkles className="w-6 h-6 text-amber-400" />,
-      badge: 'NASA Hackathon'
+      badge: 'NASA Space Apps Challenge'
     },
+
     {
       title: 'Research Paper Publication',
       category: 'Academic Achievement',
-      date: 'Published Author',
-      description: 'Co-authored and published research work focusing on algorithmic intelligence and data systems application.',
+      date: 'March 2025',
+      description:
+        'Published "A Comprehensive Review of Climate Management Systems Enhanced by IoT" in Novyi Mir Research Journal, Volume 10, Issue 3.',
       icon: <BookOpen className="w-6 h-6 text-indigo-400" />,
-      badge: 'IEEE / Academic Journal'
+      badge: 'Research Publication'
     }
   ];
 
@@ -683,18 +689,30 @@ export default function App() {
                 </div>
 
                 <div className={`p-4 px-6 border-t flex items-center justify-between ${
-                  darkMode ? 'border-slate-800/80 bg-slate-900/30' : 'border-slate-100 bg-slate-50'
-                }`}>
+                    darkMode
+                      ? 'border-slate-800/80 bg-slate-900/30'
+                      : 'border-slate-100 bg-slate-50'
+                  }`}>
+                {proj.github ? (
                   <a
                     href={proj.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-xs font-medium text-indigo-400 hover:text-indigo-300"
                   >
-                    <Github className="w-4 h-4" /> Code Repository
+                    <Github className="w-4 h-4" />
+                    Code Repository
                   </a>
+                ) : (
+                  <span className="text-xs font-medium text-slate-500">
+                    Professional Work
+                  </span>
+                )}
+
+                {proj.github && (
                   <ExternalLink className="w-4 h-4 text-slate-500" />
-                </div>
+                )}
+              </div>
               </div>
             ))}
           </div>
@@ -973,8 +991,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} Shweta Dhar. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="https://github.com/shwetadhar" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">GitHub</a>
-            <a href="https://linkedin.com/in/shweta-dhar" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">LinkedIn</a>
+            <a href="https://github.com/itsmeshwetadhar" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/shweta-dhar-051158279/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">LinkedIn</a>
             <a href="mailto:shwetadhar777@gmail.com" className="hover:text-indigo-400 transition-colors">Email</a>
           </div>
         </div>
