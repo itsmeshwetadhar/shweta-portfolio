@@ -417,7 +417,7 @@ export default function App() {
                   View Projects
                 </a>
                 <a
-                  href="https://github.com/shwetadhar"
+                  href="https://github.com/itsmeshwetadhar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center gap-2 px-4 py-3 rounded-xl border transition-colors ${
@@ -428,7 +428,7 @@ export default function App() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/shweta-dhar"
+                  href="https://www.linkedin.com/in/shweta-dhar-051158279/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center gap-2 px-4 py-3 rounded-xl border transition-colors ${
