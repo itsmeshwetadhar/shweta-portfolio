@@ -783,8 +783,8 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-wider text-slate-500 font-semibold">LinkedIn</p>
-                      <a href="https://linkedin.com/in/shweta-dhar" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-emerald-400 transition-colors">
-                        linkedin.com/in/shweta-dhar
+                      <a href="https://www.linkedin.com/in/shweta-dhar-051158279" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-emerald-400 transition-colors">
+                        linkedin.com/in/shweta-dhar-051158279
                       </a>
                     </div>
                   </div>
@@ -795,8 +795,8 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-wider text-slate-500 font-semibold">GitHub</p>
-                      <a href="https://github.com/shwetadhar" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-sky-400 transition-colors">
-                        github.com/shwetadhar
+                      <a href="https://github.com/itsmeshwetadhar" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-sky-400 transition-colors">
+                        github.com/itsmeshwetadhar
                       </a>
                     </div>
                   </div>
